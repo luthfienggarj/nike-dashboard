@@ -1,0 +1,490 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header
+{
+    width: 100%;
+    min-height: 5vh;
+}
+.nav-one
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 6%;
+    align-items: center;
+}
+.nav-one img
+{
+    width: 30px;
+}
+.nav-container-one
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-container-one ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-container-one ul li a
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 10px;
+}
+
+/*----Nav Ke 2-----*/
+.nav-two
+{
+    background-color: #ebecf0;
+    display: flex;
+    justify-content: center;
+    padding: 0% 5%; /*untuk atur jarak icons dan logo*/
+    align-items: center;
+}
+.nav-two img
+{
+    width: 70px;
+    background: none;
+}
+.nav-two .fa-bars-staggered
+{
+    display: none;
+}
+.nav-container-two 
+{
+    flex: 1;
+    text-align: center;
+}
+.nav-container-two ul li
+{
+    list-style: none;
+    padding: 8px 12px;
+    display: inline-block;
+    position: relative;
+}
+.nav-container-two ul li a
+{
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+/* .nav-two img:hover
+{
+    background: #ff2800;
+} */
+.nav-container-two ul li::after /*Mengatur hover garis bawah*/
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0s;
+}
+.nav-container-two ul li:hover::after
+{
+    width: 100%;
+}
+
+
+/*--Search, Heart & Love--*/
+
+.search
+{
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 0.8rem 1rem;
+}
+.search [type="search"]
+{
+    background: transparent;
+    width: 5vw;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    background-color: transparent;
+    border: none;
+}
+.fa-magnifying-glass
+{
+    font-size: 15px;
+    color: #000;
+}
+
+.heart-bag
+{
+    margin-left: 1%;
+    font-size: 25px;
+    justify-content: space-between;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.heart-bag i
+{
+    color: #000;
+    border: 0.2px solid transparent;
+    background: transparent;
+    border-radius: 100px;
+    transition: 0s;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+    border-width: 10px;
+}
+.heart-bag i:hover
+{
+    border: 1px solid #D3D3D3;
+    background: #D3D3D3;
+    border-width: 2px;
+    border-radius: 100px;
+    border-width: 10px;
+}
+
+/*--Media--*/
+@media(max-width: 700px)
+{
+    .nav-one
+    {
+        display: none;
+    }
+    .nav-two
+    {
+        display: block;
+        letter-spacing: 3px;
+    }
+    .nav-two .img-bar
+    {
+        display: inline;
+        flex-basis: 5%;
+    }
+    /* .nav-two .fa-bars-staggered
+    {
+        display: grid;
+        text-align: right;
+        font-size: 20px;
+        color: #ff004f;
+    } */
+    .search [type="search"]
+    {
+        width: 80%;
+    }
+    .heart-bag .fa-heart, .fa-bag-shopping
+    {
+        margin-right: 0%;
+        text-align: center;
+        color: #ff004f;
+    }
+}
+
+/*--Section Gambar--*/
+.section-gambar
+{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px; 
+    height: 100%;
+    min-height: 5vh;
+}
+.section-gambar img
+{
+    width: 100%;
+}
+.content-tulisan strong
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+/*--Button Shop--*/
+.btn-shop
+{
+    padding-top: 2%;
+}
+.btn-satu, .btn-dua
+{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #000;
+    background: #000;
+    cursor: pointer;
+    position: relative;
+    padding: 9px 25px;
+    color: #fff;
+    border-radius: 60px;
+}
+
+/*--Section Video--*/
+.section-empat
+{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 5vh;
+}
+.nike-video-leggings h5
+{
+    text-align: left;
+    color: #000;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.nike-video-leggings video
+{
+    width: 100%;
+    height: auto;
+}
+.moving
+{
+    text-align: center;
+}
+.moving h1 strong
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    font-weight: bolder;
+}
+.moving
+{
+    font-size: 15px;
+}
+
+/*--Section Latest--*/
+.latest
+{
+    width: 90%;
+    min-height: 5vh;
+    margin: auto;
+    padding-top: 100px;
+}
+.photo-nike
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.photo-nike img
+{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+/* .category-name
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 2px;
+} */
+/* .text-image
+{
+    width: 100%;
+    height: 100%;
+    top: 470px;
+    left: 50px;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.text-image
+{
+    width: 100%;
+    height: 100%;
+    top: 470px;
+    left: 50px;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    font-weight: lighter;
+    cursor: pointer;
+} */
+/* .bottom-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  } */
+
+
+/*----Lebron X Liverpool----*/
+.featured
+{
+    
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+    min-height: 5vh;
+}
+.liverpool img
+{
+    width: 100%;
+}
+
+/*----Gear Up----*/
+.gear
+{
+    width: 90%;
+    min-height: 5vh;
+    padding-top: 100px;
+    margin: auto;
+}
+.gear img
+{
+    width: 100%;
+}
+
+/*----Image Slider----*/
+.img-slider
+{
+    min-height: 5vh;
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+}
+.carausel
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.carausel img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*----Items Product----*/
+.items
+{
+    width: 90%;
+    min-height: 5vh;
+    margin: auto;
+    padding: 100px;
+}
+.title-product
+{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0;
+    padding: auto;/*####*/
+}
+.product-name
+{
+    text-align: justify;
+    position: relative;
+    cursor: pointer;
+}
+.pruduct-name h4
+{
+    color: #000;
+    font-weight: lighter;
+}
+.pruduct-name p
+{
+    color: #949494;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*----Items Product----*/
+.bottom-footer
+{
+    width: 100%;
+    min-height: 50vh;
+    margin: auto;
+    padding-top: 10px;
+    background: #000;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+.div-footer
+{
+    align-items: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10%;
+    padding: 2% 6%;
+}
+.find-store
+{
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    background: #000;
+    width: 100%;
+}
+.icons i
+{
+    color: #000;
+    border: 1px solid #bebebe;
+    background: #bebebe;
+    border-radius: 100px;
+    font-size: 20px;
+    border-width: 10px;
+    cursor: pointer;
+}
+.icons i:hover
+{
+    background: #fff;
+    border: 1px solid #fff;
+    transition: 0s;
+    border-width: 10px;
+    border-radius: 100px;
+}
+.location
+{
+    color: #fff;
+    text-align: left;
+    align-items: left;
+    grid-gap: 10%;
+    padding: 2% 6%;
+}
+.location p i
+{
+    color: #fff;
+    margin-right: 15px; /*Untuk memberi Space antaa Icons dan Tulisan*/
+    font-size: 14px;
+}
+.reserve
+{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.guide
+{
+    color: #fff;
+    text-align: center;
+    align-items: right;
+    justify-content: space-between;
+    display: flex;
+    gap: 80px;
+    font-size: 12px;
+    cursor: pointer;
+}
